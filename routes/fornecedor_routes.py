@@ -12,16 +12,17 @@ def cadastro():
 
     if request.method == "POST":
 
-        cnpj = request.form.get("cnpj")
-        razao_social = request.form.get("razao_social")
-        nome_fantasia = request.form.get("nome_fantasia")
-        email = request.form.get("email")
-        telefone = request.form.get("telefone")
-        endereco = request.form.get("endereco")
-        cidade = request.form.get("cidade")
-        uf = request.form.get("uf")
-        atividade_principal = request.form.get("atividade_principal")
-        senha = request.form.get("senha")
+        cnpj = request.form.get("cnpj", "").strip()
+        razao_social = request.form.get("razao_social", "").strip()
+        nome_fantasia = request.form.get("nome_fantasia", "").strip()
+        email = request.form.get("email", "").strip()
+        telefone = request.form.get("telefone", "").strip()
+        endereco = request.form.get("endereco", "").strip()
+        cidade = request.form.get("cidade", "").strip()
+        uf = request.form.get("uf", "").strip()
+        atividade_principal = request.form.get(
+            "atividade_principal", "").strip()
+        senha = request.form.get("senha", "").strip()
 
         if not cnpj or not razao_social or not email or not senha:
 
