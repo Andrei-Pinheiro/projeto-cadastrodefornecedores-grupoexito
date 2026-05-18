@@ -65,13 +65,13 @@ Terminal: venv\Scripts\activate
 ## 4. Instalar dependência
 
 ```bash
-pip install -r requirements.txt
+Terminal: pip install -r requirements.txt
 ```
 
 ## 5. Criar banco de dados
 
 ```bash
-python database/init_db.py
+Terminal: python database/init_db.py
 ```
 
 ## 6. Executar aplicação
